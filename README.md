@@ -25,6 +25,8 @@ If I wanted to create 2 decks then I would use the GET parameter "deck_count=2".
 4. 
 * Two cards are drawn from the deck. The cards are the King of Hearts and 8 of Clubs.
 
+### Displaying deck id
+
 ``` 
 let deck = {
     "success": true,
@@ -49,6 +51,39 @@ let deck = {
 deckID = deck.deck_id
 console.log(deckID) 
 ```
+### Displaying info for each card
 
+```
+let deck = {
+    "success": true,
+    "cards": [
+        {
+            "image": "https://deckofcardsapi.com/static/img/KH.png",
+            "value": "KING",
+            "suit": "HEARTS",
+            "code": "KH"
+        },
+        {
+            "image": "https://deckofcardsapi.com/static/img/8C.png",
+            "value": "8",
+            "suit": "CLUBS",
+            "code": "8C"
+        }
+    ],
+    "deck_id":"3p40paa87x90",
+    "remaining": 50
+}
 
+deckID = deck.deck_id
+for (var i = 0; i < deck.cards.length; i++) {
+console.log("Card #" + (i + 1));
+console.log("Value: " + deck.cards[i].value);
+console.log("Suit: " + deck.cards[i].suit);
+}
+```
+
+## Exercise 2
+```
+Enter code here
+```
 
