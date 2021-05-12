@@ -80,6 +80,10 @@ console.log("Card #" + (i + 1));
 console.log("Value: " + deck.cards[i].value);
 console.log("Suit: " + deck.cards[i].suit);
 }
+
+for (var card of deck.cards) {
+   console.log(card.image + " " + card.value);
+}
 ```
 
 ## Exercise 2
