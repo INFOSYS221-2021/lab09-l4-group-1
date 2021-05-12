@@ -24,7 +24,9 @@ If I wanted to create 2 decks then I would use the GET parameter "deck_count=2".
 
 4. 
 * Two cards are drawn from the deck. The cards are the King of Hearts and 8 of Clubs.
-* ``` let deck = {
+
+``` 
+let deck = {
     "success": true,
     "cards": [
         {
@@ -45,8 +47,8 @@ If I wanted to create 2 decks then I would use the GET parameter "deck_count=2".
 }
 
 deckID = deck.deck_id
-console.log(deckID) ```
-* ``` Enter code here ```
+console.log(deckID) 
+```
 
-## Exercise 2
-``` Enter code here ```
+
+
