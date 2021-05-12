@@ -83,6 +83,7 @@ console.log("Suit: " + deck.cards[i].suit);
 ```
 
 ## Exercise 2
+```
 // Initialise the values at the start of the game
 // Do not change this part!
 let thisDeck;
@@ -217,3 +218,4 @@ function restartGame() {
   hitMeSum.innerHTML = "Click Hit Me! to start playing!"
   hitMeCards.innerHTML = "";
 }
+```
