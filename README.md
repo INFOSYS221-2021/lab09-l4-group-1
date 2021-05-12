@@ -83,7 +83,6 @@ console.log("Suit: " + deck.cards[i].suit);
 ```
 
 ## Exercise 2
-```
 // Initialise the values at the start of the game
 // Do not change this part!
 let thisDeck;
@@ -140,8 +139,8 @@ async function getACard() {
 // based on cardInfo
 function getValueFromCard(cardInfo) {
   // TODO 4: find the value and suit of the card
-  let cardValue = cardInfo.cards.value;
-  let cardSuit = cardInfo.cards.suit;
+  let cardValue = cardInfo.cards[0].value;
+  let cardSuit = cardInfo.cards[0].suit;
   
   // TODO 5: update the cardValue appropriately
   // if card is Jack, then set the cardValue to 11, etc
@@ -154,10 +153,12 @@ function getValueFromCard(cardInfo) {
   else if (cardValue == 'KING'){
   	cardValue = 13;
    }
-   }
+  else if (cardValue == 'ACE'){
+    cardValue = 1;
+  }
    
-  
-  
+   
+ 
   // if a card is red, then the value will be negative
   // Do not change this.
   let posOrNeg = 1;
@@ -216,5 +217,3 @@ function restartGame() {
   hitMeSum.innerHTML = "Click Hit Me! to start playing!"
   hitMeCards.innerHTML = "";
 }
-```
-
